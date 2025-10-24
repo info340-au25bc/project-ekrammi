@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 2rem;
+    padding: 2px;
     font-family: "Arial", sans-serif;
     color: black;
     background-color: beige;
@@ -13,7 +13,7 @@ body {
 }
 
 #overview {
-    font-size: 2rem;
+    font-size: 2px;
     text-align: center;
     font-weight: 550;
 }
