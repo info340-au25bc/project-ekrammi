@@ -1,0 +1,41 @@
+.title {
+    text-align: center;
+    color: red;
+  }
+  
+  .cluster {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .cluster a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .site-header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f3f3f3;
+    margin-bottom: 1rem;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f3f3f3;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
