@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corelab Pilates • Schedule</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">Corelab Pilates</h1>
+    <nav aria-label="Main navigation">
+      <ul class="cluster" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h2>Class Schedule</h2>
+
+    <form class="filter-form" aria-label="Filter classes">
+      <div class="field">
+        <label for="instructor">Instructor</label>
+        <select id="instructor" name="instructor">
+          <option>All</option>
+          <option>Hani Ali</option>
+          <option>Noor Omar</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="level">Level</label>
+        <select id="level" name="level">
+          <option>All</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="day">Day</label>
+        <select id="day" name="day">
+          <option>Any</option>
+          <option>Mon</option><option>Tue</option><option>Wed</option>
+          <option>Thu</option><option>Fri</option><option>Sat</option><option>Sun</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Filter</button>
+      <a class="btn btn-secondary" href="schedule.html" role="button">Reset</a>
+    </form>
+
+    <section class="class-list grid" aria-label="Available classes">
+      <article class="card">
+        <header>
+          <h3>Pilates Flow</h3>
+          <p class="sub">Hani Ali • Intermediate</p>
+        </header>
+        <p>Tue • 6:00–6:55 PM • Studio A</p>
+        <p>Spots: 6 / 10 <span class="tag ok">Open</span></p>
+        <div class="actions">
+          <a class="btn" href="booking.html">Book</a>
+          <a class="btn btn-secondary" href="class.html" role="button">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Core Strength</h3>
+          <p class="sub">Noor Omar • Beginner</p>
+        </header>
+        <p>Thu • 8:00–8:50 AM • Studio B</p>
+        <p>Spots: 9 / 10 <span class="tag low">Few</span></p>
+        <div class="actions">
+          <a class="btn" href="booking.html">Book</a>
+          <a class="btn btn-secondary" href="class.html" role="button">Details</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Reformer Basics</h3>
+          <p class="sub">Hani Ali • Beginner</p>
+        </header>
+        <p>Sat • 10:00–10:55 AM • Studio A</p>
+        <p>Spots: 10 / 10 <span class="tag full">Full</span></p>
+        <div class="actions">
+          <button class="btn" disabled aria-disabled="true">Book</button>
+          <a class="btn btn-secondary" href="booking.html" role="button">Join waitlist</a>
+        </div>
+      </article>
+    </section>
+
+    <p class="center"><a class="btn-text" href="index.html">← Back to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Corelab Pilates</p>
+  </footer>
+</body>
+</html>
