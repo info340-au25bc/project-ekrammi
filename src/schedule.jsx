@@ -14,6 +14,10 @@ const pilatesSchedule = [
 
 ]
 
+function Schedule(){
+    return <h1> Schedule page </h1>;
+}
+
 export default function Schedule(){
     return (
         <section>
