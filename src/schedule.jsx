@@ -19,5 +19,16 @@ function Schedule(){
 }
 
 export default function Schedule(){
-    return <Schedule />;
+    return (
+        <section>
+            <h1> CoreLab Class Schedule </h1>
+            <ul>
+                {pilatesSchedule.map((cls) => (
+                    <li key={scheduleClass.id}>
+                        <strong>{scheduleClass.day}</strong> = {scheduleClass.time} ({scheduleClass.type}) 
+                   </li>
+                ))}
+            </ul>
+        </section>
+    );
 }
