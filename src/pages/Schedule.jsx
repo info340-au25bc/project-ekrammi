@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 const pilatesSchedule = [
     {id: 1, day: "Monday", time: "9:00 AM", type: "Matt"},
     {id: 2, day: "Tuesday", time: "11:00 AM", type: "Reformer"},
@@ -17,7 +17,7 @@ export default function Schedule(){
         <div>
             <section>
                 <h1> CoreLab Schedule </h1>
-                <h2> CoreLab Instructors </h2>
+                <h2> <strong>CoreLab Instructors</strong></h2>
                 <ul>
                 {pilatesSchedule.map((scheduleClass) => (
                     <li key={scheduleClass.id}>

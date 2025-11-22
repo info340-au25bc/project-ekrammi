@@ -10,7 +10,7 @@ export default function Navbar(){
             <nav className="nav-links">
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/classes"> Classes </NavLink>
-                <NavLink to="/schedule"> <Schedule></Schedule> </NavLink>
+                <NavLink to="/schedule"> Schedule </NavLink>
                 <NavLink to="/contact"> Contact </NavLink>
             </nav>
         </header>
