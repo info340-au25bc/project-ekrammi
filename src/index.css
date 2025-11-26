@@ -1,17 +1,251 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+/* this is the layout shell */
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-header {
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: white;
+  padding: 1.5rem 1rem;
 }
 
-main {
-  padding: 1rem;
+.site-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+.brand-link {
+  text-decoration: none;
+}
 
-  
+.brand-link:hover {
+  text-decoration: underline;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* the Nav */
+
+.main-nav {
+  background-color: #020617;
+  border-bottom: 1px solid #111827;
+}
+
+.main-nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #e5e7eb;
+}
+
+.nav-link:hover {
+  border-color: #4b5563;
+}
+
+.nav-link-active {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #022c22;
+}
+
+/* this is the Main content */
+
+.content {
+  max-width: 960px;
+  margin: 1.5rem auto 2.5rem;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.card {
+  background-color: #020617;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #1f2937;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.muted {
+  color: #9ca3af;
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+/* This is the Schedule grid and the filters */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-button {
+  border: 1px solid #4b5563;
+  background-color: transparent;
+  color: #e5e7eb;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  border-color: #e5e7eb;
+}
+
+.filter-button-active {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #022c22;
+}
+
+.class-grid {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.class-card {
+  background-color: #020617;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 0.75rem 1rem;
+}
+
+.class-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+.empty-message {
+  font-style: italic;
+  color: #9ca3af;
+}
+
+/* the booking form section */
+
+.booking-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-row label {
+  font-size: 0.9rem;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: 2px solid #22c55e;
+  outline-offset: 1px;
+}
+
+.primary-button {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  background-color: #22c55e;
+  border-radius: 999px;
+  border: none;
+  padding: 0.4rem 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #022c22;
+}
+
+.primary-button:hover {
+  filter: brightness(1.05);
+}
+
+.confirmation {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #1f2937;
+}
+
+/* this is the Dashboard */
+
+.booking-summary {
+  margin-top: 1rem;
+  padding: 0.75rem 0;
+}
+
+/* the Footer */
+
+.site-footer {
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  border-top: 1px solid #1f2937;
+}
