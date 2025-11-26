@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
 
-import HomePage from './Pages/HomePage.jsx';
+import HomePage from './Pages/Home.jsx';
 import SchedulePage from './Pages/SchedulePage.jsx';
 import BookingPage from './Pages/BookingPage.jsx';
 import DashboardPage from './Pages/DashboardPage.jsx';
